@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var main = require('./dist/main');
+var cli = require('./dist/cli');
+
+console.log('totally starting data refresh...\n');
+
+main()
+	.then(cli.mapConfToOutput)
+	.then(cli.logOutput)
+	.catch((e) => {
+		console.error(e);
+	});
