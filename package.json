@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel lib -d dist",
     "prepublish": "npm run build",
-    "test": "mocha test/*.test.js test/**/*.test.js --compilers js:babel-register"
+    "test": "mocha $(find test -name '*.test.js') --compilers js:babel-register"
   },
   "bin": {
     "totally": "./cli"
