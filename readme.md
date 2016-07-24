@@ -47,6 +47,34 @@ module.exports = [
 ];
 ```
 
+**Diffs**
+
+When new data is retrieved, a deep comparison is made between the existing data and what will be replaced. Files will be skipped if there is no difference between the new and existing data. To control this more, each configuration object can set an array of paths to exclude from the diff. Here's an example use case:
+
+Take an existing set of data:
+
+```json
+{
+	"name": "Boop",
+	"updated_at": 1469396380973
+}
+```
+
+Each time the data above is refreshed, there's a good chance that `"updated_at"` will be different. In cases where you want to ignore that change, exclude it from the diff:
+
+```js
+module.exports = [
+	{
+		filePath: 'name-of-scenario',
+		endpoint: 'http://domain.com/api/endpoint?id=1234',
+		excludeFromDiff: [ 'updated_at' ]
+	}
+];
+```
+
+Any time `"updated_at"` changes, it won't count as a modification, and a new file will not be written.
+
+
 ## About
 
 **totally** is a project by [Aaron Godin](http://aarongodin.me).
