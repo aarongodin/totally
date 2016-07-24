@@ -2,6 +2,8 @@
 
 http://npmjs.org/totally
 
+[![Build Status](https://travis-ci.org/aarongodin/totally.svg?branch=master)](https://travis-ci.org/aarongodin/totally)
+
 ## Motivation
 
 Many of the components and applications we build rely on an extensive suite of mock data. The goal of totally is to make it easier to fetch and manage mock data while providing ways to track data contract changes.
@@ -72,7 +74,7 @@ module.exports = [
 ];
 ```
 
-Any time `"updated_at"` changes, it won't count as a modification, and a new file will not be written. The `"excludeFromDiff"` array must contain strings that follow the same getter syntax as [lodash's get()](https://lodash.com/docs#get). 
+Any time `"updated_at"` changes, it won't count as a modification, and a new file will not be written. The `"excludeFromDiff"` array must contain strings that follow the same getter syntax as [lodash's get()](https://lodash.com/docs#get).
 
 
 ## About
