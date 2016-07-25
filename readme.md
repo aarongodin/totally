@@ -1,8 +1,9 @@
 **totally** - a cli for fetching test data and tracking data contracts
 
-http://npmjs.org/totally
-
 [![Build Status](https://travis-ci.org/aarongodin/totally.svg?branch=master)](https://travis-ci.org/aarongodin/totally)
+[![Build Status](https://img.shields.io/npm/v/totally.svg)](https://www.npmjs.org/package/totally)
+
+<a href=""><img src="" class="badge"></a>
 
 ## Motivation
 
