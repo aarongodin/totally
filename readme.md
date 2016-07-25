@@ -73,8 +73,7 @@ module.exports = [
 ];
 ```
 
-Any time `"updated_at"` changes, it won't count as a modification, and a new file will not be written. The `"excludeFromDiff"` array must contain strings that follow the same getter syntax as [lodash's get()](https://lodash.com/docs#get).
-
+Any time `"updated_at"` changes, it won't count as a modification. If there are no other changes, the file won't be written to. The `"excludeFromDiff"` array must contain strings that follow the same getter syntax as [lodash's get()](https://lodash.com/docs#get).
 
 ## About
 
