@@ -1,6 +1,6 @@
 {
   "name": "totally",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fetch test data",
   "main": "dist/main.js",
   "scripts": {
