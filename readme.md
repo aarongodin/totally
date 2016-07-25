@@ -3,8 +3,6 @@
 [![Build Status](https://travis-ci.org/aarongodin/totally.svg?branch=master)](https://travis-ci.org/aarongodin/totally)
 [![Build Status](https://img.shields.io/npm/v/totally.svg)](https://www.npmjs.org/package/totally)
 
-<a href=""><img src="" class="badge"></a>
-
 ## Motivation
 
 Many of the components and applications we build rely on an extensive suite of mock data. The goal of totally is to make it easier to fetch and manage mock data while providing ways to track data contract changes.
