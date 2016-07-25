@@ -1,7 +1,7 @@
 
 module.exports = [
-	{
-		filePath: 'mock',
-		endpoint: 'http://mock.com'
-	}
+  {
+    filePath: 'mock',
+    endpoint: 'http://mock.com'
+  }
 ];
