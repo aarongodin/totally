@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "deep-diff": "0.3.4",
+    "jsonschema": "1.1.0",
     "lodash.get": "4.3.0",
     "lodash.unset": "4.4.0",
     "mkdirp": "0.5.1",
