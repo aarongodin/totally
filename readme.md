@@ -77,7 +77,7 @@ Any time `"updated_at"` changes, it won't count as a modification. If there are 
 
 **Schemas**
 
-Totally includes support for [json-schema.org](http://json-schema.org/) validation. When a `"validate"` key is specified, a JSON schema is loaded from the specified path. `"validate"` can be either url or a relative or absolute path.
+Totally includes support for [json-schema.org](http://json-schema.org/) validation. When a `"validate"` key is specified, a JSON schema is loaded from the specified path. `"validate"` can a URL, relative path or absolute path.
 
 ```js
 module.exports = [
