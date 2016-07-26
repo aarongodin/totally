@@ -30,7 +30,7 @@ module.exports = [
 
 After creating a configuration file, run totally from the command line with `totally`. Totally creates and modifies files and reports on the output.
 
-**Custom handlers**
+**Handlers**
 
 Configuration objects can also specify a handler for modifying the returned data. Handlers are passed a result object and must return an object, but anything you wish to do in a handler is up to you. For example:
 
@@ -74,6 +74,20 @@ module.exports = [
 ```
 
 Any time `"updated_at"` changes, it won't count as a modification. If there are no other changes, the file won't be written to. The `"excludeFromDiff"` array must contain strings that follow the same getter syntax as [lodash's get()](https://lodash.com/docs#get).
+
+**Schemas**
+
+Totally includes support for [json-schema.org](http://json-schema.org/) validation. When a `"validate"` key is specified, a JSON schema is loaded from the specified path. `"validate"` can be either url or a relative or absolute path.
+
+```js
+module.exports = [
+  {
+    filePath: 'user',
+    endpoint: 'http://domain.com/api/users?id=1234',
+    validate: 'schema/user'
+  }
+];
+```
 
 ## About
 
